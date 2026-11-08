@@ -1,0 +1,17 @@
+{
+  "name": "file-handle-reference-counter-tools",
+  "version": "0.1.0",
+  "description": "Reference-counted wrapper for file descriptors and other shared handles.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {}
+}
