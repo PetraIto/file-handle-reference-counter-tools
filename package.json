@@ -1,6 +1,6 @@
 {
   "name": "file-handle-reference-counter-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reference-counted wrapper for file descriptors and other shared handles.",
   "type": "module",
   "main": "src/index.js",
