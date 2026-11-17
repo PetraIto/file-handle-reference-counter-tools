@@ -68,3 +68,10 @@ who need the raw value for logging should capture it before releasing.
 - `registry.unregister(id)` — removes a closed counter; throws if the counter
   is still open, returns `false` for unknown ids.
 - `registry.size` — number of registered ids.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
